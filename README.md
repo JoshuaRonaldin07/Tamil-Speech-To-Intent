@@ -1,9 +1,9 @@
-# 🎙️ Tamil Speech-to-Intent System
+#  Tamil Speech-to-Intent System
 ### Building an End-to-End Speech NLP Pipeline for an Underrepresented Language
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Voice interfaces — Siri, Alexa, Google Assistant — work well for English, Mandarin, and Spanish. For the **80+ million Tamil speakers** in the world, the technology either does not exist or performs so poorly it is unusable.
 
@@ -13,10 +13,10 @@ This project builds a **Speech-to-Intent pipeline** for Tamil — a complete end
 
 ---
 
-## 🗺️ Pipeline Architecture
+##  Pipeline Architecture
 
 ```
-🎙️ Raw Tamil Audio
+ Raw Tamil Audio
         ↓
   [ Audio Processing ]     → waveform, spectrogram analysis
         ↓
@@ -26,12 +26,12 @@ This project builds a **Speech-to-Intent pipeline** for Tamil — a complete end
         ↓
   [ Evaluation ]           → WER, accuracy metrics
         ↓
-📊 Research Findings
+Research Findings
 ```
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 tamil_speech_project/
@@ -50,7 +50,7 @@ tamil_speech_project/
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 **Mozilla Common Voice — Tamil (CV Corpus 24.0)**
 - 🔗 https://commonvoice.mozilla.org/en/datasets
@@ -66,7 +66,7 @@ tamil_speech_project/
 
 ---
 
-## 🔬 Key Research Findings (So Far)
+##  Key Research Findings (So Far)
 
 ### Finding 1 — Encoding Problem
 Standard Windows tools use `cp1252` encoding which has no Tamil support. This is one systemic reason Tamil voice AI is underdeveloped — even basic infrastructure assumes Western languages.
@@ -105,7 +105,7 @@ Shorter sentences yield lower WER. Recording 18 (5 words: *வடையின்
 
 ---
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 ### Prerequisites
 - Python 3.9+
@@ -138,19 +138,10 @@ python lesson1_4.py
 python lesson2_1.py
 ```
 
----
-
-## 🔭 Next Steps
-
-- [ ] **Module 3** — Intent detection on transcribed Tamil text
-- [ ] **Module 4** — Full pipeline evaluation (audio → intent)
-- [ ] **Module 5** — Error analysis: where does the pipeline break?
-- [ ] **Module 6** — Compare with fine-tuned Tamil ASR models
-- [ ] **Research Report** — Formal write-up of findings
 
 ---
 
-## 🌍 Why This Matters
+##  Why This Matters
 
 Tamil is spoken by **80+ million people** as a first language — more than French or German. Yet virtually no commercial voice AI system handles Tamil reliably. This project is part of a broader effort to understand and close the performance gap between high-resource and low-resource language AI systems.
 
@@ -158,21 +149,3 @@ The methodology developed here (pipeline construction + systematic WER analysis)
 
 ---
 
-## 📚 References
-
-- [Mozilla Common Voice](https://commonvoice.mozilla.org)
-- [OpenAI Whisper](https://github.com/openai/whisper)
-- [Librosa Audio Analysis](https://librosa.org)
-- Radford et al. (2022) — *Robust Speech Recognition via Large-Scale Weak Supervision*
-
----
-
-## 👤 Author
-
-Built as part of a research project on Speech NLP for underrepresented languages.  
-Relevant to: Cerence, MPI-IS Embodied Social Interaction Group, South Asian Language AI.
-
----
-
-*"The limits of my language mean the limits of my world." — Wittgenstein*  
-*Let's expand those limits for Tamil speakers.* 🎙️
